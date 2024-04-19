@@ -1,25 +1,6 @@
-# incomplete: entries[1] does not work entries is not iterable
 import os
 
 
-# entries = os.scandir('/home/pc/myCode')
-#    entry_list = []
-#    for entry in entries:
-#        if (entry.is_dir()):
-#            entry_list.append(entry.name)
-#            print(entry)
-#    print('=========================================')
-#    for i in range(0, len(entry_list)):
-#        deeper = os.scandir(f'/home/pc/myCode/{entry_list[i]}')
-#        print(entry_list[i])
-#        for x in deeper:
-#            print(x)
-#        print('=====================================')
-#
-# file:
-#   file2,
-#   file3:
-#       file5
 def print_files(path, lvl=0):
     file_list = os.scandir(path)
     for file in file_list:
